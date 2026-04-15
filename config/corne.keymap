@@ -49,6 +49,15 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        Caps {
+            bindings = <&caps_word>;
+            key-positions = <16 19>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -60,10 +69,10 @@
             //                    | GUI | LWR | ENT |   | SPC | RSE  | ALT |
 
             bindings = <
-&kp TAB        &kp Q         &kp W            &kp E                &kp R            &kp T    &kp Y    &kp U              &kp I                &kp O            &kp P            &kp MINUS
-&kp GRAVE      &hml LCTRL A  &hml LEFT_ALT S  &hml LEFT_COMMAND D  &hml LSHIFT F    &kp G    &kp H    &hmr LEFT_SHIFT J  &hmr LEFT_COMMAND K  &hmr LEFT_ALT L  &hmr LCTRL SEMI  &kp SQT
-&kp BACKSLASH  &kp Z         &kp X            &kp C                &kp V            &kp B    &kp N    &kp M              &kp COMMA            &kp DOT          &kp FSLH         &kp EQUAL
-                                              &none                &lt 1 BACKSPACE  &none    &kp RET  &kp SPACE          &none
+&kp TAB        &kp Q         &kp W            &kp E                &kp R            &kp T        &kp Y    &kp U              &kp I                &kp O            &kp P            &kp MINUS
+&kp GRAVE      &hml LCTRL A  &hml LEFT_ALT S  &hml LEFT_COMMAND D  &hml LSHIFT F    &kp G        &kp H    &hmr LEFT_SHIFT J  &hmr LEFT_COMMAND K  &hmr LEFT_ALT L  &hmr LCTRL SEMI  &kp SQT
+&kp BACKSLASH  &kp Z         &kp X            &kp C                &kp V            &kp B        &kp N    &kp M              &kp COMMA            &kp DOT          &kp FSLH         &kp EQUAL
+                                              &none                &lt 1 BACKSPACE  &lt 3 ESC    &kp RET  &kp SPACE          &none
             >;
         };
 
@@ -82,7 +91,7 @@
             >;
         };
 
-        raise_layer {
+        Numpad {
             // -----------------------------------------------------------------------------------------
             // |  TAB |   !   |   @   |   #   |   $   |   %   |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
             // | CTRL |RGB_TOG|RGB_HUI|RGB_SAI|RGB_VAI|       |   |  -  |  =  |  [  |  ]  |  \  |  `   |
@@ -94,6 +103,15 @@
 &kp LCTRL  &rgb_ug RGB_TOG  &rgb_ug RGB_HUI  &rgb_ug RGB_SAI  &rgb_ug RGB_BRI  &trans         &kp MINUS  &kp EQUAL  &kp LBKT         &kp RBKT  &kp BSLH  &kp GRAVE
 &kp LSHFT  &rgb_ug RGB_EFF  &rgb_ug RGB_HUD  &rgb_ug RGB_SAD  &rgb_ug RGB_BRD  &bootloader    &kp UNDER  &kp PLUS   &kp LBRC         &kp RBRC  &kp PIPE  &kp TILDE
                                              &kp LGUI         &trans           &kp SPACE      &kp RET    &trans     &kp RALT
+            >;
+        };
+
+        Symbols {
+            bindings = <
+&trans  &trans  &trans     &trans    &trans    &trans       &kp AMPS      &kp LESS_THAN         &kp EQUAL      &kp GREATER_THAN  &kp PIPE       &kp POUND
+&trans  &trans  &kp LCTRL  &kp LALT  &kp LGUI  &kp RSHFT    &kp LBKT      &kp LEFT_PARENTHESIS  &kp LS(COLON)  &kp LS(RPAR)      &kp RBKT       &kp LS(PRCNT)
+&trans  &trans  &trans     &trans    &trans    &trans       &kp LS(DLLR)  &kp LS(LBRC)          &kp LS(STAR)   &kp LS(RBRC)      &kp LS(CARET)  &kp LS(EXCL)
+                           &trans    &trans    &trans       &kp LS(AT)    &kp SPACE             &trans
             >;
         };
     };
