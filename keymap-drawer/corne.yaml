@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: corne}
 layers:
   QWERTY:
-  - TAB
+  - $$mdi:keyboard-tab$$
   - Q
   - W
   - E
@@ -12,20 +12,20 @@ layers:
   - I
   - O
   - P
-  - '-'
-  - '`'
-  - {t: A, h: LCTRL}
-  - {t: S, h: LEFT ALT}
-  - {t: D, h: LEFT COMMAND}
-  - {t: F, h: LSHIFT}
+  - {t: '-', s: _}
+  - {t: '`', s: '~'}
+  - {t: A, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: S, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: D, h: '$$mdi:apple-keyboard-command$$'}
+  - {t: F, h: '$$mdi:apple-keyboard-shift$$'}
   - G
   - H
-  - {t: J, h: LEFT SHIFT}
-  - {t: K, h: LEFT COMMAND}
-  - {t: L, h: LEFT ALT}
-  - {t: ;, h: LCTRL}
-  - ''''
-  - \
+  - {t: J, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: K, h: '$$mdi:apple-keyboard-command$$'}
+  - {t: L, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: ;, h: '$$mdi:apple-keyboard-control$$', s: ':'}
+  - {t: '''', s: '"'}
+  - {t: \, s: '|'}
   - Z
   - X
   - C
@@ -33,55 +33,55 @@ layers:
   - B
   - N
   - M
-  - ','
-  - .
-  - /
-  - '='
+  - {t: ',', s: <}
+  - {t: ., s: '>'}
+  - {t: /, s: '?'}
+  - {t: '=', s: +}
   - Numpad
-  - {t: BACKSPACE, h: Navigation}
-  - {t: ESC, h: Symbols}
-  - RET
-  - SPACE
+  - {t: '$$mdi:backspace$$', h: Navigation}
+  - {t: ⎋, h: Symbols}
+  - $$mdi:keyboard-return$$
+  - $$mdi:keyboard-space$$
   - Media
   Navigation:
-  - Gui+TAB
-  - Gui+Q
-  - Gui+W
-  - Gui+E
-  - Gui+R
-  - Gui+T
+  - ⌘$$mdi:keyboard-tab$$
+  - ⌘Q
+  - ⌘W
+  - ⌘E
+  - ⌘R
+  - ⌘T
   - {t: ▽, type: trans}
-  - HOME
-  - PAGE DOWN
-  - PAGE UP
-  - END
+  - ↖
+  - ⇟
+  - ⇞
+  - ↘
   - {t: ▽, type: trans}
-  - Gui+`
-  - Gui+A
-  - Gui+S
-  - Gui+D
-  - Gui+F
-  - Gui+G
+  - {t: ⌘`, s: ⌘~}
+  - ⌘A
+  - ⌘S
+  - ⌘D
+  - ⌘F
+  - ⌘G
   - {t: ▽, type: trans}
-  - LEFT
-  - DOWN
-  - UP
-  - RIGHT
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - Gui+Z
-  - Gui+X
-  - Gui+C
-  - Gui+V
-  - Gui+B
+  - ←
+  - ↓
+  - ↑
+  - →
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - ⌘Z
+  - ⌘X
+  - ⌘C
+  - ⌘V
+  - ⌘B
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: BACKSPACE, h: Navigation, type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: '$$mdi:backspace$$', h: Navigation, type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -98,19 +98,19 @@ layers:
   - '*'
   - (
   - )
-  - BSPC
+  - $$mdi:backspace$$
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '-'
-  - '='
-  - '['
-  - ']'
-  - \
-  - '`'
+  - {t: '-', s: _}
+  - {t: '=', s: +}
+  - {t: '[', s: '{'}
+  - {t: ']', s: '}'}
+  - {t: \, s: '|'}
+  - {t: '`', s: '~'}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -123,12 +123,12 @@ layers:
   - '}'
   - '|'
   - '~'
-  - {t: LGUI, type: held}
+  - {t: '$$mdi:apple-keyboard-command$$', type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - RALT
+  - {t: '$$mdi:apple-keyboard-option$$', type: held}
   Symbols:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -138,21 +138,21 @@ layers:
   - {t: ▽, type: trans}
   - '&'
   - <
-  - '='
+  - {t: '=', s: +}
   - '>'
   - '|'
   - '#'
   - {t: ▽, type: trans}
-  - LEFT CONTROL
-  - LEFT ALT
-  - LEFT GUI
-  - LEFT SHIFT
+  - {t: '$$mdi:apple-keyboard-control$$', type: held}
+  - {t: '$$mdi:apple-keyboard-option$$', type: held}
+  - {t: '$$mdi:apple-keyboard-command$$', type: held}
+  - {t: '$$mdi:apple-keyboard-shift$$', type: held}
   - {t: ▽, type: trans}
-  - '['
+  - {t: '[', s: '{'}
   - (
   - ':'
   - )
-  - ']'
+  - {t: ']', s: '}'}
   - '%'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -173,8 +173,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   Media:
-  - VOLUME UP
-  - BRIGHTNESS INC
+  - $$mdi:volume-plus$$
+  - $$mdi:brightness-7$$
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -185,11 +185,11 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - VOLUME DOWN
-  - BRIGHTNESS DEC
-  - PREV
-  - PLAY PAUSE
-  - NEXT
+  - $$mdi:volume-minus$$
+  - $$mdi:brightness-5$$
+  - $$mdi:skip-backward$$
+  - $$mdi:play-pause$$
+  - $$mdi:skip-forward$$
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
