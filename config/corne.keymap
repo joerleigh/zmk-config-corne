@@ -69,6 +69,7 @@
             // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | SHFT |
             //                    | GUI | LWR | ENT |   | SPC | RSE  | ALT |
 
+            display-name = "Qwerty";
             bindings = <
 &kp TAB        &kp Q         &kp W            &kp E                &kp R            &kp T        &kp Y    &kp U              &kp I                &kp O            &kp P            &kp MINUS
 &kp GRAVE      &hml LCTRL A  &hml LEFT_ALT S  &hml LEFT_COMMAND D  &hml LSHIFT F    &kp G        &kp H    &hmr LEFT_SHIFT J  &hmr LEFT_COMMAND K  &hmr LEFT_ALT L  &hmr LCTRL SEMI  &kp SQT
@@ -84,6 +85,7 @@
             // | ESC  |       | HOME| PGUP| PGDN| END |   |     |     |     |     |     |      |
             //                      | GUI |     | SPC |   | ENT |     | ALT |
 
+            display-name = "Nav";
             bindings = <
 &kp LG(TAB)    &kp LG(Q)  &kp LG(W)  &kp LG(E)  &kp LG(R)        &kp LG(T)    &trans  &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP  &kp END    &trans
 &kp LG(GRAVE)  &kp LG(A)  &kp LG(S)  &kp LG(D)  &kp LG(F)        &kp LG(G)    &trans  &kp LEFT  &kp DOWN       &kp UP       &kp RIGHT  &trans
@@ -99,6 +101,7 @@
             // | SHFT |RGB_MOD|RGB_HUD|RGB_SAD|RGB_VAD|QK_BOOT|   |  _  |  +  |  {  |  }  | "|" |  ~   |
             //                            | GUI |     |  SPC  |   | ENT |     | ALT |
 
+            display-name = "Numpad";
             bindings = <
 &trans  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp ASTERISK  &kp LPAR  &kp RPAR  &kp BSPC
 &trans  &trans    &trans  &trans    &trans    &trans       &kp MINUS  &kp EQUAL  &kp LBKT      &kp RBKT  &kp BSLH  &kp GRAVE
@@ -108,6 +111,8 @@
         };
 
         Symbols {
+
+            display-name = "Symbols";
             bindings = <
 &trans  &trans            &trans        &trans        &trans          &trans    &kp AMPS    &kp LESS_THAN         &kp EQUAL     &kp GREATER_THAN       &kp PIPE   &kp POUND
 &trans  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_GUI  &kp LEFT_SHIFT  &trans    &kp LBKT    &kp LEFT_PARENTHESIS  &kp COLON     &kp RIGHT_PARENTHESIS  &kp RBKT   &kp PERCENT
@@ -117,6 +122,7 @@
         };
 
         Media {
+            display-name = "Media";
             bindings = <
 &kp C_VOLUME_UP    &kp C_BRIGHTNESS_INC  &trans      &trans            &trans      &trans    &trans        &trans        &trans        &trans        &trans        &trans
 &kp C_VOLUME_DOWN  &kp C_BRIGHTNESS_DEC  &kp C_PREV  &kp C_PLAY_PAUSE  &kp C_NEXT  &trans    &trans        &trans        &trans        &trans        &trans        &trans

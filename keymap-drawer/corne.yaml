@@ -1,6 +1,6 @@
 layout: {zmk_keyboard: corne}
 layers:
-  QWERTY:
+  Qwerty:
   - $$mdi:keyboard-tab$$
   - Q
   - W
@@ -38,12 +38,12 @@ layers:
   - {t: /, s: '?'}
   - {t: '=', s: +}
   - Numpad
-  - {t: '$$mdi:backspace$$', h: Navigation}
+  - {t: '$$mdi:backspace$$', h: Nav}
   - {t: ⎋, h: Symbols}
   - $$mdi:keyboard-return$$
   - $$mdi:keyboard-space$$
   - Media
-  Navigation:
+  Nav:
   - ⌘$$mdi:keyboard-tab$$
   - ⌘Q
   - ⌘W
@@ -81,7 +81,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: '$$mdi:backspace$$', h: Navigation, type: held}
+  - {t: '$$mdi:backspace$$', h: Nav, type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -217,5 +217,5 @@ layers:
   - {type: held}
 combos:
 - p: [16, 19]
-  k: '&caps_word'
-  l: [QWERTY]
+  k: $$mdi:apple-keyboard-caps$$
+  l: [Qwerty]
