@@ -87,7 +87,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   Numpad:
-  - TAB
+  - {t: ▽, type: trans}
   - '!'
   - '@'
   - '#'
@@ -95,15 +95,15 @@ layers:
   - '%'
   - ^
   - '&'
-  - KP MULTIPLY
+  - '*'
   - (
   - )
   - BSPC
-  - LCTRL
-  - RGB TOG
-  - RGB HUI
-  - RGB SAI
-  - RGB BRI
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '-'
   - '='
@@ -111,12 +111,12 @@ layers:
   - ']'
   - \
   - '`'
-  - LSHFT
-  - RGB EFF
-  - RGB HUD
-  - RGB SAD
-  - RGB BRD
-  - '&bootloader'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - _
   - +
   - '{'
@@ -125,8 +125,8 @@ layers:
   - '~'
   - {t: LGUI, type: held}
   - {t: ▽, type: trans}
-  - SPACE
-  - RET
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - RALT
   Symbols:
@@ -218,3 +218,4 @@ layers:
 combos:
 - p: [16, 19]
   k: '&caps_word'
+  l: [QWERTY]
