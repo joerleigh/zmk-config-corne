@@ -10,6 +10,8 @@ parse_config:
     right_gui: "⌘"
     keycode_combiner: "{mods}{key}"
     mod_combiner: "{mod_1}{mod_2}"
+  raw_binding_map:
+    "&caps_word": "$$mdi:apple-keyboard-caps$$"
   zmk_keycode_map:
     # Keyboard & Keypad: Keyboard → Numbers
     NUMBER_1: { t: "1", s: "!" }
