@@ -109,10 +109,10 @@
 
         Symbols {
             bindings = <
-&trans  &trans  &trans     &trans    &trans    &trans       &kp AMPS      &kp LESS_THAN         &kp EQUAL      &kp GREATER_THAN  &kp PIPE       &kp POUND
-&trans  &trans  &kp LCTRL  &kp LALT  &kp LGUI  &kp RSHFT    &kp LBKT      &kp LEFT_PARENTHESIS  &kp LS(COLON)  &kp LS(RPAR)      &kp RBKT       &kp LS(PRCNT)
-&trans  &trans  &trans     &trans    &trans    &trans       &kp LS(DLLR)  &kp LS(LBRC)          &kp LS(STAR)   &kp LS(RBRC)      &kp LS(CARET)  &kp LS(EXCL)
-                           &trans    &trans    &trans       &kp LS(AT)    &kp SPACE             &trans
+&trans  &trans            &trans        &trans        &trans          &trans    &kp AMPS    &kp LESS_THAN         &kp EQUAL     &kp GREATER_THAN       &kp PIPE   &kp POUND
+&trans  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_GUI  &kp LEFT_SHIFT  &trans    &kp LBKT    &kp LEFT_PARENTHESIS  &kp COLON     &kp RIGHT_PARENTHESIS  &kp RBKT   &kp PERCENT
+&trans  &trans            &trans        &trans        &trans          &trans    &kp DOLLAR  &kp LEFT_BRACE        &kp ASTERISK  &kp RIGHT_BRACE        &kp CARET  &kp EXCL
+                                        &trans        &trans          &trans    &kp AT      &trans                &trans
             >;
         };
 

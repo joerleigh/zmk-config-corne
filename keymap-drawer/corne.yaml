@@ -143,34 +143,34 @@ layers:
   - '|'
   - '#'
   - {t: ▽, type: trans}
+  - LEFT CONTROL
+  - LEFT ALT
+  - LEFT GUI
+  - LEFT SHIFT
   - {t: ▽, type: trans}
-  - LCTRL
-  - LALT
-  - LGUI
-  - RSHFT
   - '['
   - (
-  - 'Sft+:'
-  - Sft+)
+  - ':'
+  - )
   - ']'
-  - Sft+%
+  - '%'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Sft+$
-  - Sft+{
-  - Sft+*
-  - Sft+}
-  - Sft+^
-  - Sft+!
+  - $
+  - '{'
+  - '*'
+  - '}'
+  - ^
+  - '!'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
-  - Sft+@
-  - SPACE
+  - '@'
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   Media:
   - VOLUME UP
