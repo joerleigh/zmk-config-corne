@@ -12,7 +12,7 @@ layers:
   - I
   - O
   - P
-  - {t: '-', s: _}
+  - {t: '$$mdi:backspace$$', s: '$$mdi:backspace-reverse$$'}
   - {t: '`', s: '~'}
   - {t: A, h: '$$mdi:apple-keyboard-control$$'}
   - {t: S, h: '$$mdi:apple-keyboard-option$$'}
@@ -38,7 +38,7 @@ layers:
   - {t: /, s: '?'}
   - {t: '=', s: +}
   - Numpad
-  - {t: '$$mdi:backspace$$', h: Nav}
+  - {t: '$$mdi:keyboard-space$$', h: Nav}
   - {t: ⎋, h: Symbols}
   - $$mdi:keyboard-return$$
   - $$mdi:keyboard-space$$
