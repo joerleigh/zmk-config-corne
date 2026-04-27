@@ -71,10 +71,10 @@
 
             display-name = "Qwerty";
             bindings = <
-&kp TAB        &kp Q         &kp W            &kp E                &kp R          &kp T        &kp Y    &kp U              &kp I                &kp O            &kp P            &backspace_delete
-&kp GRAVE      &hml LCTRL A  &hml LEFT_ALT S  &hml LEFT_COMMAND D  &hml LSHIFT F  &kp G        &kp H    &hmr LEFT_SHIFT J  &hmr LEFT_COMMAND K  &hmr LEFT_ALT L  &hmr LCTRL SEMI  &kp SQT
-&kp BACKSLASH  &kp Z         &kp X            &kp C                &kp V          &kp B        &kp N    &kp M              &kp COMMA            &kp DOT          &kp FSLH         &kp EQUAL
-                                              &mo 2                &lt 1 SPACE    &lt 3 ESC    &kp RET  &kp SPACE          &mo 4
+&kp TAB         &kp Q         &kp W            &kp E                &kp R          &kp T        &kp Y    &kp U              &kp I                &kp O            &kp P            &backspace_delete
+&kp GRAVE       &hml LCTRL A  &hml LEFT_ALT S  &hml LEFT_COMMAND D  &hml LSHIFT F  &kp G        &kp H    &hmr LEFT_SHIFT J  &hmr LEFT_COMMAND K  &hmr LEFT_ALT L  &hmr LCTRL SEMI  &kp SQT
+&kp LEFT_SHIFT  &kp Z         &kp X            &kp C                &kp V          &kp B        &kp N    &kp M              &kp COMMA            &kp DOT          &kp FSLH         &kp EQUAL
+                                               &mo 2                &lt 1 SPACE    &lt 3 ESC    &kp RET  &kp SPACE          &mo 4
             >;
         };
 
@@ -87,10 +87,10 @@
 
             display-name = "Nav";
             bindings = <
-&kp LG(TAB)    &kp LG(Q)  &kp LG(W)  &kp LG(E)  &kp LG(R)        &kp LG(T)    &trans  &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP  &kp END    &trans
-&kp LG(GRAVE)  &kp LG(A)  &kp LG(S)  &kp LG(D)  &kp LG(F)        &kp LG(G)    &trans  &kp LEFT  &kp DOWN       &kp UP       &kp RIGHT  &trans
-&trans         &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)        &kp LG(B)    &trans  &trans    &trans         &trans       &trans     &trans
-                                     &trans     &lt 1 BACKSPACE  &trans       &trans  &trans    &trans
+&kp LG(TAB)    &kp LG(Q)                &kp LG(W)            &kp LG(E)            &kp LG(R)              &kp LG(T)    &trans  &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP  &kp END    &trans
+&kp LG(GRAVE)  &hml LEFT_CONTROL LG(A)  &hml LEFT_ALT LG(S)  &hml LEFT_GUI LG(D)  &hml LEFT_SHIFT LG(F)  &kp LG(G)    &trans  &kp LEFT  &kp DOWN       &kp UP       &kp RIGHT  &trans
+&trans         &kp LG(Z)                &kp LG(X)            &kp LG(C)            &kp LG(V)              &kp LG(B)    &trans  &trans    &trans         &trans       &trans     &trans
+                                                             &trans               &lt 1 BACKSPACE        &trans       &trans  &trans    &trans
             >;
         };
 
